@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Raul Garcia" />
+    <meta name="description" content="Exercice of forms" />
+    <meta name="keywords" content="html" />
+    <title>Formularis</title>
+    <style>
+      form {
+        width: 50%;
+        margin: auto;
+      }
+      legend {
+        margin: auto;
+      }
+      fieldset {
+        margin: auto;
+      }
+      h1 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Formulari de contacte</h1>
+    <form id="formulari" method="post" target="_self">
+      <fieldset>
+        <legend>Si us plau ompliu els camps i clickeu a Enviar consulta</legend>
+        <label for="name">Nom:</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Nom"
+          required
+        /><br />
+        <label for="cognoms">Cognoms:</label>
+        <input
+          type="text"
+          name="cognoms"
+          id="cognoms"
+          placeholder="Cognom1 Cognom2"
+          required
+        /><br />
+        <label for="correo">Correu electronic:</label>
+        <input
+          type="email"
+          name="correo"
+          id="correo"
+          placeholder="adreça@domini.com"
+          required
+        /><br />
+        <label for="dataTrucada">Quan vols rebre la trucada?</label>
+        <input
+          type="date"
+          name="dataTrucada"
+          id="dataTrucada"
+          min="2022-11-27"
+          max="2022-12-28"
+          required
+        /><br />
+        <label for="numero">Numero:</label>
+        <input
+          type="tel"
+          name="numero"
+          id="numero"
+          placeholder="XXX XXX XXX"
+          pattern="[0-9]{3} [0-9]{3} [0-9]{3}"
+          required
+        /><br />
+        <label for="satisfaccio">Grau de satisfacció:</label>
+        <input
+          type="number"
+          id="satisfaccio"
+          name="satisfaccio"
+          placeholder="100"
+          min="0"
+          max="100"
+          required
+        /><br />
+        <label for="opinio">Opinio:</label><br />
+        <textarea name="opinio" id="opinio" cols="50" rows="10"></textarea
+        ><br /><br />
+        <input type="submit" />
+        <input type="reset" value="Buidar els camps" />
+      </fieldset>
+    </form>
+  </body>
+</html>
