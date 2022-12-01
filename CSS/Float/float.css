@@ -1,0 +1,44 @@
+/*
+Utiliza float per mostrar les 3 capes filles de main en columnes.
+Posa la primera capa amb una amplada de 40%, i la resta a 30%.
+Tingues en compte utilizar el clearfix per tal que el footer no es solapi.
+*/
+div, footer {
+    box-sizing: border-box;
+    padding: 20px;
+  }
+  body {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  main div:nth-of-type(1) {
+    background: green;
+    width: 40%;
+    float: left;
+    height: 650px;
+  }
+  main div:nth-of-type(2) {
+    background: yellow;
+    width: 30%;
+    float: left;
+    height: 650px;
+  }
+  main div:nth-of-type(3) {
+    background: red;
+    float: right;
+    width: 30%;
+    float: right;
+    height: 650px;
+  }
+  footer{
+    background: pink;
+  }
+
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+    }
+  
+  
