@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    
+img {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  transform: rotate();
+}
+
+@keyframes example {
+  0%   { left:0%; top:0px; transform: rotate(0deg);}
+  25%  { left:90%; top:200px; transform: rotate(90deg);}
+  50%  { left: 0%; top:200px; transform: rotate(180deg);}
+  75% { left:90%; top:0px;transform: rotate(270deg);}
+  100% {left:0%; top:0px;transform: rotate(360deg);}
+}
+
+</style>
+</head>
+<body>
+  <img src="logoIETI.jpg" alt="Esteve Terrades i illa" />
+</body>
+</html>
