@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    div {
+      width: 100px;
+      height: 100px;
+      position: relative;
+      background-color: red;
+      animation-name: example;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes example {
+      0% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+      }
+      25% {
+        background-color: blue;
+        left: 0px;
+        top: 200px;
+        transform: rotate(90deg);
+      }
+      50% {
+        background-color: green;
+        left: 200px;
+        top: 200px;
+        transform: rotate(180deg);
+      }
+      75% {
+        background-color: yellow;
+        left: 200px;
+        top: 0px;
+        transform: rotate(270deg);
+      }
+      100% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+  <body>
+    <p>
+      Afegiu els cinc passos següents a l'animació "exemple" (utilitzant el 0%,
+      el 25%, el 50%, el 75% i el 100%):
+    </p>
+    <ol>
+      <li>
+        0%: estableix el color de fons a "vermell", la posició esquerra a "0px",
+        la posició superior a: "0px".
+      </li>
+      <li>
+        25%: estableix el color de fons a "blau", la posició esquerra a "0 px",
+        la posició superior a: "200 px".
+      </li>
+      <li>
+        50%: estableix el color de fons a "verd", la posició esquerra a "200
+        px", la posició superior a: "200 px".
+      </li>
+      <li>
+        75%: estableix el color de fons a "groc", la posició esquerra a "200
+        px", la posició superior a: "0 px".
+      </li>
+      <li>
+        100%: estableix el color de fons a "vermell", la posició esquerra a "0
+        px", la posició superior a: "0 px".
+      </li>
+    </ol>
+    <p>
+      Consell: els valors% representen les diferents etapes de l'animació. El 0%
+      és el començament i el 100% és el final.
+    </p>
+
+    <div></div>
+  </body>
+</html>
