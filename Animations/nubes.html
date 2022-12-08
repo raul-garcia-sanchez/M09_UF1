@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    html {
+      background-color: #49b2fc; /* For browsers that do not support gradients */
+      background-image: linear-gradient(#1b83f9, #49b2fc);
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+    }
+    p {
+      text-align: center;
+      font-size: 2em;
+    }
+    .nubol {
+      position: relative;
+      background-image: url(https://cdn.discordapp.com/attachments/750634660215652443/802198719381504010/nubol.png);
+      background-size: cover;
+    }
+    .nubol1 {
+      top: 70px;
+      left: 25%;
+      width: 300px;
+      height: 180px;
+      z-index: -1;
+      animation-name: example;
+      animation-duration: 2s;
+      animation-delay: 3s;
+      animation-iteration-count: infinite;
+    }
+
+    .nubol2 {
+      top: 90%;
+      left: 50%;
+      width: 120px;
+      height: 80px;
+      z-index: 1;
+      animation-name: example;
+      animation-duration: 4s;
+      animation-delay: 4s;
+      animation-iteration-count: infinite;
+    }
+
+    .nubol3 {
+      top: -250px;
+      left: 20%;
+      width: 60px;
+      height: 40px;
+      z-index: 1;
+      animation-name: example;
+      animation-duration: 8s;
+      animation-delay: 5s;
+      animation-iteration-count: infinite;
+    }
+
+    .nubol4 {
+      top: 50px;
+      left: 20%;
+      width: 400px;
+      height: 280px;
+      z-index: 1;
+      animation-name: example;
+      animation-duration: 3s;
+      animation-delay: 6s;
+      animation-iteration-count: infinite;
+    }
+
+    .nubol5 {
+      top: 0px;
+      left: 70%;
+      width: 230px;
+      height: 140px;
+      z-index: 1;
+      animation-name: example;
+      animation-duration: 9s;
+      animation-delay: 7s;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes example {
+      0% {
+        left: -50%;
+      }
+      100% {
+        left: 150%;
+      }
+    }
+  </style>
+  <body>
+    <p>
+      Afegiu una animació per cadascun dels nubols. <br />S'han de desplaçar de
+      d'esquerre a de dreta. No poden tenir la mateix velocitat ni la mateixa
+      mida. <br />Fes servir la propietat <em>"z-index"</em> per solapar algun
+      dels nubols.
+    </p>
+
+    <div class="nubol nubol1"></div>
+    <div class="nubol nubol2"></div>
+    <div class="nubol nubol3"></div>
+    <div class="nubol nubol4"></div>
+    <div class="nubol nubol5"></div>
+  </body>
+</html>
