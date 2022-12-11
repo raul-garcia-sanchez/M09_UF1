@@ -16,15 +16,22 @@
     }
     .container {
       display: flex;
-      flex-wrap: wrap;
+      height: 100%;
     }
     .container div {
       font-size: 40px;
       color: white;
       text-align: center;
-      height: 200px;
+      height: 100px;
       width: 33.3%;
     }
+
+    .container div:nth-child(2){
+        height: 100%;
+        
+    }
+
+
     #div1 {
       background-color: rgb(6, 205, 148);
     }
@@ -42,6 +49,7 @@
     }
     #div6 {
       background-color: orange;
+      align-self: center;
     }
     #div7 {
       background-color: black;
@@ -51,6 +59,7 @@
     }
     #div9 {
       background-color: fuchsia;
+      align-self: flex-end;
     }
     #div10 {
       background-color: dodgerblue;

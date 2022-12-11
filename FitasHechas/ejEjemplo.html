@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html,body {
+    min-width: 990px;
+    height: 400px;
+}
+
+.container {
+    display: flex;
+    margin: 5px;
+    padding: 5px;
+    background: #f4f6f6;
+    width: 1000px;
+    height: 400px;
+    margin: 0 auto;
+    /* justify-content: space-around; */
+    flex-direction: row;
+    /* justify-content: space-around;
+    flex-direction: row; */
+}
+
+.container div {
+    display: block;
+    margin: 5px;
+    padding: 5px;
+    background: #fad7a0;
+    font-size: 3em;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+}
+
+ .container div:nth-child(1) {
+    align-self: flex-start;  
+} 
+
+.container div:nth-child(5) {
+    align-self: flex-start; 
+} 
+
+.container div:nth-child(9) {
+    align-self: flex-start; 
+} 
+
+.container div:nth-child(even){
+    align-self: center;
+}
+
+.container div:nth-child(3){
+    align-self: flex-end;
+}
+
+.container div:nth-child(7){
+    align-self: flex-end;
+}
+
+
+
+/* .container div:nth-child(odd){
+    align-self: flex-start;
+    order: -1;
+}  */
+
+
+
+
+
+
+</style>
+</head>
+<body>
+<div class="container">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+  <div>7</div>
+  <div>8</div>
+  <div>9</div>
+  <div>10</div>
+</div>
+</body>
+</html>

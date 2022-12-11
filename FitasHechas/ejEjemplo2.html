@@ -2,8 +2,9 @@
 <html>
 <head>
 <style>
-body {
+html,body {
     min-width: 990px;
+    height: 400px;
 }
 
 .container {
@@ -11,11 +12,17 @@ body {
     margin: 5px;
     padding: 5px;
     background: #f4f6f6;
-    max-width: 1000px;
+    width: 1000px;
+    height: 400px;
     margin: 0 auto;
-    flex-direction: row-reverse;
-    justify-content: space-around;
+    /* justify-content: space-around; */
+    flex-direction: column-reverse;
     flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: center;
+    
+    /* justify-content: space-around;
+    flex-direction: row; */
 }
 
 .container div {
@@ -23,11 +30,30 @@ body {
     margin: 5px;
     padding: 5px;
     background: #fad7a0;
-    font-size: 5em;
+    font-size: 3em;
     width: 100px;
-    min-height: 100px;
+    height: 50px;
     text-align: center;
 }
+
+
+/* .container div:nth-child(10){
+    order: -1;
+    align-self: flex-end ;
+}
+
+.container div:nth-child(6){
+    order: 1;
+    align-self: flex-start ;
+} */
+
+
+/* .container div:nth-child(odd){
+    align-self: flex-start;
+    order: -1;
+}  */
+
+
 
 
 

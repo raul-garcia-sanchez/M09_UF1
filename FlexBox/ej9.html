@@ -16,45 +16,39 @@
     }
     .container {
       display: flex;
-      flex-wrap: wrap;
+      height: 100%;
     }
     .container div {
       font-size: 40px;
       color: white;
       text-align: center;
-      height: 200px;
-      width: 33.3%;
+      height: 100px;
     }
     #div1 {
       background-color: rgb(6, 205, 148);
+      flex-grow: 1;
     }
     #div2 {
       background-color: rgb(6, 39, 205);
+      flex-grow: 2;
     }
     #div3 {
       background-color: blueviolet;
+      flex-grow: 1;
     }
     #div4 {
       background-color: brown;
+      flex-grow: 1;
     }
     #div5 {
       background-color: pink;
+      flex-grow: 3;
     }
     #div6 {
       background-color: orange;
+      flex-grow: 1;
     }
-    #div7 {
-      background-color: black;
-    }
-    #div8 {
-      background-color: darkgreen;
-    }
-    #div9 {
-      background-color: fuchsia;
-    }
-    #div10 {
-      background-color: dodgerblue;
-    }
+    
   </style>
   <body>
     <div class="container">
@@ -64,10 +58,6 @@
       <div id="div4">4</div>
       <div id="div5">5</div>
       <div id="div6">6</div>
-      <div id="div7">7</div>
-      <div id="div8">8</div>
-      <div id="div9">9</div>
-      <div id="div10">10</div>
     </div>
   </body>
 </html>
